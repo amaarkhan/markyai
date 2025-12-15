@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Transform your videos into engaging blog posts with AI-powered Marky. Convert video content to SEO-optimized articles in minutes.">
+    <meta name="keywords" content="AI video to blog, content creation, video transcription, SEO optimization, content marketing">
+    <title>Marky AI - Transform Videos into Engaging Blog Posts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-video"></i>
+                    <span>Marky<span class="highlight">AI</span></span>
+                </div>
+                <div class="nav-links" id="navLinks">
+                    <a href="#home">Home</a>
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#testimonials">Testimonials</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                <div class="nav-buttons">
+                    <button class="btn btn-secondary" onclick="scrollToDemo()">Try Demo</button>
+                    <button class="btn btn-primary" onclick="scrollToPricing()">Get Started</button>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="gradient-circle circle-1"></div>
+            <div class="gradient-circle circle-2"></div>
+            <div class="gradient-circle circle-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="badge">
+                        <i class="fas fa-sparkles"></i>
+                        <span>AI-Powered Content Creation</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Transform Your <span class="gradient-text">Videos</span> into 
+                        <span class="gradient-text">Engaging Blogs</span> in Minutes
+                    </h1>
+                    <p class="hero-description">
+                        Unlock the power of AI to convert your video content into SEO-optimized, 
+                        engaging blog posts. Save time, reach wider audiences, and boost your content strategy.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary btn-large" onclick="scrollToPricing()">
+                            <span>Start Free Trial</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <button class="btn btn-secondary btn-large" onclick="scrollToDemo()">
+                            <i class="fas fa-play"></i>
+                            <span>Watch Demo</span>
+                        </button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <h3>10K+</h3>
+                            <p>Videos Converted</p>
+                        </div>
+                        <div class="stat">
+                            <h3>5K+</h3>
+                            <p>Happy Users</p>
+                        </div>
+                        <div class="stat">
+                            <h3>95%</h3>
+                            <p>Time Saved</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="floating-card card-1">
+                        <i class="fas fa-video"></i>
+                        <div>
+                            <h4>Video Input</h4>
+                            <p>Upload any video</p>
+                        </div>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-magic"></i>
+                        <div>
+                            <h4>AI Processing</h4>
+                            <p>Smart conversion</p>
+                        </div>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fas fa-blog"></i>
+                        <div>
+                            <h4>Blog Output</h4>
+                            <p>SEO-optimized</p>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll to explore</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">
+                    <i class="fas fa-star"></i>
+                    <span>Features</span>
+                </div>
+                <h2>Powerful Features for Content Creators</h2>
+                <p>Everything you need to transform your video content into engaging written articles</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Lightning Fast</h3>
+                    <p>Convert hours of video content into blog posts in just minutes with our advanced AI technology.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>Multi-Language Support</h3>
+                    <p>Support for 50+ languages. Create content for global audiences effortlessly.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>SEO Optimized</h3>
+                    <p>Automatically generate SEO-friendly content with meta descriptions, keywords, and headers.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <h3>Smart Editing</h3>
+                    <p>Built-in editor with AI suggestions to refine and customize your content perfectly.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <h3>Auto Image Extraction</h3>
+                    <p>Automatically extract and optimize key frames from your videos as blog images.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-share-nodes"></i>
+                    </div>
+                    <h3>Easy Integration</h3>
+                    <p>Direct publishing to WordPress, Medium, Ghost, and other popular platforms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">
+                    <i class="fas fa-gear"></i>
+                    <span>Process</span>
+                </div>
+                <h2>How It Works</h2>
+                <p>Simple, fast, and efficient - get your blog post in 3 easy steps</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                    <h3>Upload Your Video</h3>
+                    <p>Upload your video file or paste a YouTube, Vimeo, or any video URL. We support all major formats.</p>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI Processing</h3>
+                    <p>Our AI analyzes your video, transcribes audio, and generates a well-structured blog post with key insights.</p>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Review & Publish</h3>
+                    <p>Review, edit if needed, and publish directly to your blog or download as markdown, HTML, or text.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="demo" id="demo">
+        <div class="container">
+            <div class="demo-content">
+                <div class="demo-text">
+                    <div class="badge">
+                        <i class="fas fa-play"></i>
+                        <span>Try It Now</span>
+                    </div>
+                    <h2>See Marky in Action</h2>
+                    <p>Experience the power of AI-driven content creation. Upload a video and watch as it transforms into a comprehensive blog post in real-time.</p>
+                    <ul class="demo-features">
+                        <li><i class="fas fa-check"></i> No credit card required</li>
+                        <li><i class="fas fa-check"></i> Instant results</li>
+                        <li><i class="fas fa-check"></i> Full feature access</li>
+                    </ul>
+                    <button class="btn btn-primary btn-large" onclick="openDemo()">
+                        <span>Try Free Demo</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="demo-visual">
+                    <div class="demo-window">
+                        <div class="window-header">
+                            <div class="window-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <p>demo.markyai.com</p>
+                        </div>
+                        <div class="window-content">
+                            <i class="fas fa-file-video"></i>
+                            <p>Drop your video here or click to upload</p>
+                            <button class="btn btn-secondary">Choose File</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">
+                    <i class="fas fa-tag"></i>
+                    <span>Pricing</span>
+                </div>
+                <h2>Choose Your Plan</h2>
+                <p>Flexible pricing for individuals and teams of all sizes</p>
+            </div>
+            <div class="pricing-toggle">
+                <span class="toggle-label">Monthly</span>
+                <label class="switch">
+                    <input type="checkbox" id="pricingToggle">
+                    <span class="slider"></span>
+                </label>
+                <span class="toggle-label">Yearly <span class="discount">Save 20%</span></span>
+            </div>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <p>Perfect for beginners</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">$</span>
+                        <span class="amount" data-monthly="19" data-yearly="15">19</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 10 videos per month</li>
+                        <li><i class="fas fa-check"></i> Up to 30 min per video</li>
+                        <li><i class="fas fa-check"></i> Basic SEO optimization</li>
+                        <li><i class="fas fa-check"></i> 5 languages supported</li>
+                        <li><i class="fas fa-check"></i> Email support</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Image extraction</li>
+                        <li class="disabled"><i class="fas fa-times"></i> API access</li>
+                    </ul>
+                    <button class="btn btn-secondary btn-block">Get Started</button>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <p>For content creators</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">$</span>
+                        <span class="amount" data-monthly="49" data-yearly="39">49</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 50 videos per month</li>
+                        <li><i class="fas fa-check"></i> Up to 2 hours per video</li>
+                        <li><i class="fas fa-check"></i> Advanced SEO optimization</li>
+                        <li><i class="fas fa-check"></i> 50+ languages supported</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                        <li><i class="fas fa-check"></i> Image extraction</li>
+                        <li><i class="fas fa-check"></i> Platform integrations</li>
+                    </ul>
+                    <button class="btn btn-primary btn-block">Get Started</button>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <p>For large teams</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">$</span>
+                        <span class="amount" data-monthly="149" data-yearly="119">149</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Unlimited videos</li>
+                        <li><i class="fas fa-check"></i> Unlimited video length</li>
+                        <li><i class="fas fa-check"></i> Premium SEO suite</li>
+                        <li><i class="fas fa-check"></i> All languages</li>
+                        <li><i class="fas fa-check"></i> 24/7 dedicated support</li>
+                        <li><i class="fas fa-check"></i> White-label option</li>
+                        <li><i class="fas fa-check"></i> API access & webhooks</li>
+                    </ul>
+                    <button class="btn btn-secondary btn-block">Contact Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">
+                    <i class="fas fa-quote-left"></i>
+                    <span>Testimonials</span>
+                </div>
+                <h2>Loved by Content Creators Worldwide</h2>
+                <p>See what our customers have to say about Marky AI</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Marky has completely transformed my content workflow. What used to take me 4-5 hours now takes just 15 minutes. The quality is incredible!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <p>Content Strategist, TechBlog</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"As a YouTuber with 500K subscribers, Marky helps me repurpose my video content effortlessly. My blog traffic has increased 300% since using it."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <h4>Michael Chen</h4>
+                            <p>YouTuber & Blogger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The multi-language support is a game-changer for our global brand. We can now reach audiences in 20+ countries with localized content."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <h4>Emma Rodriguez</h4>
+                            <p>Marketing Director, GlobalCorp</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">
+                    <i class="fas fa-question-circle"></i>
+                    <span>FAQ</span>
+                </div>
+                <h2>Frequently Asked Questions</h2>
+                <p>Got questions? We've got answers</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What video formats are supported?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Marky supports all major video formats including MP4, MOV, AVI, WMV, and more. You can also paste URLs from YouTube, Vimeo, Wistia, and other video platforms.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How accurate is the transcription?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our AI-powered transcription has 95%+ accuracy for clear audio in supported languages. The accuracy improves with better audio quality and proper enunciation.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I edit the generated blog post?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! Our built-in editor allows you to customize, refine, and perfect your content. You have full control over the final output.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is there a free trial available?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We offer a 14-day free trial with full access to all features. No credit card required to start.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How long does the conversion take?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Processing time depends on video length. Typically, a 10-minute video takes 2-3 minutes to process. Longer videos may take up to 10 minutes.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I integrate with my existing CMS?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We offer direct integrations with WordPress, Medium, Ghost, Webflow, and more. You can also export in various formats (HTML, Markdown, Plain Text).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Content Strategy?</h2>
+                <p>Join thousands of content creators who are saving time and reaching wider audiences with Marky AI</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary btn-large" onclick="scrollToPricing()">
+                        <span>Start Free Trial</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-secondary btn-large" onclick="openContactForm()">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact Sales</span>
+                    </button>
+                </div>
+                <p class="cta-note">No credit card required • 14-day free trial • Cancel anytime</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-video"></i>
+                        <span>Marky<span class="highlight">AI</span></span>
+                    </div>
+                    <p>Transform your videos into engaging blog posts with the power of AI.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#demo">Demo</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Integrations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press Kit</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">GDPR</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Marky AI. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
