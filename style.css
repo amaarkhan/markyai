@@ -858,6 +858,16 @@ input:checked + .slider:before {
     margin-bottom: 32px;
 }
 
+.old-amount {
+    display: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-light);
+    text-decoration: line-through;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
 .currency {
     font-size: 1.5rem;
     color: var(--text-secondary);
@@ -899,6 +909,13 @@ input:checked + .slider:before {
 
 .pricing-features li.disabled i {
     color: var(--text-light);
+}
+
+.workspace-note {
+    margin-top: 14px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
 }
 
 /* Testimonials Section */
@@ -1166,6 +1183,28 @@ input:checked + .slider:before {
 
 .footer-column ul li a:hover {
     color: white;
+}
+
+.impressum-box {
+    margin-top: 12px;
+    margin-bottom: 28px;
+    padding: 24px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.impressum-box h4 {
+    color: white;
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+}
+
+.impressum-box p {
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 6px;
+    line-height: 1.6;
+    font-size: 0.9375rem;
 }
 
 .footer-bottom {

@@ -37,38 +37,49 @@ function scrollToPricing() {
     scrollToSection('#pricing');
 }
 
-function scrollToDemo() {
-    scrollToSection('#demo');
-}
-
-function openDemo() {
-    // In a real implementation, this would open a demo modal or redirect
-    alert('Demo functionality coming soon! You can integrate this with your actual demo page.');
-}
-
-function openContactForm() {
-    // In a real implementation, this would open a contact form modal
-    alert('Contact form coming soon! You can add your email or contact form integration here.');
+function openSalesEmail() {
+    const subject = encodeURIComponent('Anfrage zu Marky AI White-Label Tarifen');
+    const body = encodeURIComponent('Hallo Vertriebsteam,%0D%0A%0D%0AIch moechte ueber einen White-Label Marky AI Tarif fuer mein Unternehmen sprechen.%0D%0A%0D%0AVielen Dank.');
+    window.location.href = `mailto:sales@markyai.com?subject=${subject}&body=${body}`;
 }
 
 // Pricing Toggle (Monthly/Yearly)
 const pricingToggle = document.getElementById('pricingToggle');
 const priceAmounts = document.querySelectorAll('.amount');
+const oldPriceAmounts = document.querySelectorAll('.old-amount');
+const pricePeriods = document.querySelectorAll('.period');
 
-pricingToggle.addEventListener('change', function() {
-    priceAmounts.forEach(amount => {
-        const monthlyPrice = amount.getAttribute('data-monthly');
-        const yearlyPrice = amount.getAttribute('data-yearly');
-        
-        if (this.checked) {
-            // Show yearly price
-            amount.textContent = yearlyPrice;
-        } else {
-            // Show monthly price
-            amount.textContent = monthlyPrice;
-        }
+if (pricingToggle) {
+    pricingToggle.addEventListener('change', function() {
+        priceAmounts.forEach(amount => {
+            const monthlyPrice = amount.getAttribute('data-monthly');
+            const yearlyPrice = amount.getAttribute('data-yearly');
+
+            if (this.checked) {
+                amount.textContent = yearlyPrice;
+            } else {
+                amount.textContent = monthlyPrice;
+            }
+        });
+
+        oldPriceAmounts.forEach(oldAmount => {
+            const yearlyOldPrice = oldAmount.getAttribute('data-yearly') || '';
+            if (this.checked && yearlyOldPrice) {
+                oldAmount.textContent = yearlyOldPrice;
+                oldAmount.style.display = 'inline';
+            } else {
+                oldAmount.textContent = '';
+                oldAmount.style.display = 'none';
+            }
+        });
+
+        pricePeriods.forEach(period => {
+            const monthlyPeriod = period.getAttribute('data-monthly') || 'pro Monat';
+            const yearlyPeriod = period.getAttribute('data-yearly') || 'pro Monat, jaehrlich abgerechnet';
+            period.textContent = this.checked ? yearlyPeriod : monthlyPeriod;
+        });
     });
-});
+}
 
 // FAQ Accordion
 const faqItems = document.querySelectorAll('.faq-item');
@@ -354,14 +365,12 @@ const debouncedScroll = debounce(() => {
 window.addEventListener('scroll', debouncedScroll);
 
 // Console welcome message
-console.log('%cWelcome to Marky AI! 🚀', 'color: #6366f1; font-size: 20px; font-weight: bold;');
-console.log('%cTransform your videos into engaging blog posts with AI', 'color: #6b7280; font-size: 14px;');
+console.log('%cWillkommen bei Marky AI! 🚀', 'color: #6366f1; font-size: 20px; font-weight: bold;');
+console.log('%cVerkaufen Sie Marky AI als White-Label Loesung ueber Ihre eigene Marke', 'color: #6b7280; font-size: 14px;');
 
 // Export functions for potential use in other scripts
 window.MarkyAI = {
     scrollToPricing,
-    scrollToDemo,
-    openDemo,
-    openContactForm,
+    openSalesEmail,
     validateEmail
 };
